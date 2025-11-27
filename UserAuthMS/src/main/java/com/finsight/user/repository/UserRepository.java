@@ -1,12 +1,11 @@
-package com.finsight.user.repository;
+package com.auction.auth.repository;
 
-import com.finsight.user.entity.User;
+import com.auction.auth.model.User;
 import org.springframework.data.jpa.repository.JpaRepository;
 
+import java.util.Optional;
+
 public interface UserRepository extends JpaRepository<User, String> {
-
-    boolean existById(String id);
-
-    boolean existByEmail(String email);
-
+    Optional<User> findByEmail(String email);
+    boolean existsByEmail(String email);
 }
