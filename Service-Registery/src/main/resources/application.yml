@@ -1,0 +1,28 @@
+server:
+  port: 12000
+
+spring:
+  application:
+    name: eureka-server
+
+eureka:
+  instance:
+    lease-renewal-interval-in-seconds: 5
+    lease-expiration-duration-in-seconds: 10
+  client:
+    # Eureka server should not try to register with itself
+    register-with-eureka: false
+    fetch-registry: false
+    service-url:
+      defaultZone: http://localhost:15000/eureka/
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+  endpoint:
+    health:
+      show-details: always
+
+# Optional: basic user for Spring Security (dev only)
