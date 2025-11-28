@@ -12,7 +12,7 @@
 	<artifactId>AuthenticationMS</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>AuthenticationMS</name>
-	<description>This is the microservice thta will be used to perform user Authentication and Authrization related tasks.</description>
+	<description>This is the microservice that will be used to perform user Authentication and Authorization related tasks.</description>
 	<url/>
 	<licenses>
 		<license/>
