@@ -6,6 +6,7 @@
       <list>
         <option value="$PROJECT_DIR$/UserAuthMS/pom.xml" />
         <option value="$PROJECT_DIR$/AuthenticationMS/pom.xml" />
+        <option value="$PROJECT_DIR$/Service-Registery/pom.xml" />
       </list>
     </option>
   </component>

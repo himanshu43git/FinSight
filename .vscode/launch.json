@@ -9,6 +9,26 @@
             "projectName": "UserAuthMS",
             "args": "",
             "envFile": "${workspaceFolder}/.env"
+        },
+        {
+            "type": "java",
+            "name": "Spring Boot-ServiceRegisteryApplication<Service-Registery>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.auction.registery.ServiceRegisteryApplication",
+            "projectName": "Service-Registery",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        },
+        {
+            "type": "java",
+            "name": "Spring Boot-AuthenticationMsApplication<AuthenticationMS>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.finsight.auth.AuthenticationMsApplication",
+            "projectName": "AuthenticationMS",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
         }
     ]
 }
