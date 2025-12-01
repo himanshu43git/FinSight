@@ -7,6 +7,8 @@
         <option value="$PROJECT_DIR$/UserAuthMS/pom.xml" />
         <option value="$PROJECT_DIR$/AuthenticationMS/pom.xml" />
         <option value="$PROJECT_DIR$/Service-Registery/pom.xml" />
+        <option value="$PROJECT_DIR$/ExpenseMircoService/pom.xml" />
+        <option value="$PROJECT_DIR$/ExpenseMS/pom.xml" />
       </list>
     </option>
   </component>

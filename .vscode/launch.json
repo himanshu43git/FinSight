@@ -29,6 +29,26 @@
             "projectName": "AuthenticationMS",
             "args": "",
             "envFile": "${workspaceFolder}/.env"
+        },
+        {
+            "type": "java",
+            "name": "Spring Boot-ExpenseMircoServiceApplication<ExpenseMicroService>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.finsight.expense.ExpenseMircoServiceApplication",
+            "projectName": "ExpenseMicroService",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        },
+        {
+            "type": "java",
+            "name": "Spring Boot-ExpenseMsApplication<ExpenseMS>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.finsight.expense.ExpenseMsApplication",
+            "projectName": "ExpenseMS",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
         }
     ]
 }

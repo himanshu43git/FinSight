@@ -1,0 +1,20 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/finsight_expensedb
+    username: postgres
+    password: himanshu142bhatt@post
+  jpa:
+    hibernate:
+      ddl-auto: update   # convenient for dev; change to 'validate' for prod
+    properties:
+      hibernate:
+        format_sql: true
+
+server:
+  port: 12004
+
+# disable heavy infra for dev - NoopEventPublisher already present
+logging:
+  level:
+    root: INFO
+    com.finsight: DEBUG

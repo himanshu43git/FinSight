@@ -18,6 +18,26 @@
         </processorPath>
         <module name="AuthenticationMS" />
       </profile>
+      <profile name="Annotation profile for ExpenseMicroService" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="false">
+          <entry name="$MAVEN_REPOSITORY$/org/projectlombok/lombok/1.18.28/lombok-1.18.28.jar" />
+          <entry name="$MAVEN_REPOSITORY$/org/mapstruct/mapstruct-processor/1.5.5.Final/mapstruct-processor-1.5.5.Final.jar" />
+          <entry name="$MAVEN_REPOSITORY$/org/mapstruct/mapstruct/1.5.5.Final/mapstruct-1.5.5.Final.jar" />
+        </processorPath>
+        <module name="ExpenseMircoService" />
+      </profile>
+      <profile name="Annotation profile for ExpenseMS" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="false">
+          <entry name="$MAVEN_REPOSITORY$/org/projectlombok/lombok/unknown/lombok-unknown.jar" />
+        </processorPath>
+        <module name="ExpenseMS" />
+      </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="UserAuthMS" target="21" />
@@ -26,6 +46,8 @@
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="AuthenticationMS" options="-parameters" />
+      <module name="ExpenseMS" options="-parameters" />
+      <module name="ExpenseMircoService" options="-parameters" />
       <module name="Service-Registery" options="-parameters" />
       <module name="UserAuthMS" options="-parameters" />
     </option>
