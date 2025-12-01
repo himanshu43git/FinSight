@@ -12,6 +12,7 @@ import org.springframework.data.domain.Pageable;
 import org.springframework.data.jpa.domain.Specification;
 import org.springframework.stereotype.Service;
 
+import java.time.Instant;
 import java.util.*;
 
 @Service
@@ -65,7 +66,7 @@ public class ExpenseServiceImpl implements ExpenseService {
                 .userId(request.getUserId())
                 .description(desc)
                 .amount(request.getAmount())
-                .date(new Date())
+                .date(Instant.now())
                 .category(matchedEnums)
                 .customCategories(customCategories)
                 .status(true)
@@ -85,11 +86,11 @@ public class ExpenseServiceImpl implements ExpenseService {
                 .userId(expense.getUserId())
                 .description(expense.getDescription())
                 .amount(expense.getAmount())
-                .date(expense.getDate())
+                .date(expense.getDate())         // Instant
                 .category(expense.getCategory())
                 .customCategories(expense.getCustomCategories())
                 .status(expense.isStatus())
-                .createdAt(expense.getCreatedAt())
+                .createdAt(expense.getCreatedAt()) // Instant (Creation timestamp)
                 .build();
     }
 

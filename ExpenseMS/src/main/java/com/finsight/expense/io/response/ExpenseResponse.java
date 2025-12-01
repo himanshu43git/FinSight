@@ -3,9 +3,7 @@ package com.finsight.expense.io.response;
 import com.finsight.expense.model.Category;
 import lombok.Builder;
 import lombok.Data;
-
-import java.time.LocalDateTime;
-import java.util.Date;
+import java.time.Instant;
 import java.util.Set;
 
 @Data
@@ -15,9 +13,9 @@ public class ExpenseResponse {
     private String userId;
     private String description;
     private double amount;
-    private Date date;
+    private Instant date;                // changed to Instant
     private Set<Category> category;
-    private Set<String> customCategories; // unknown categories preserved here
+    private Set<String> customCategories;
     private boolean status;
-    private LocalDateTime createdAt;
+    private Instant createdAt;           // changed to Instant
 }
